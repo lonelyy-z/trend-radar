@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>潮流雷达 · 20260826</title>
 <style>
-:root { --paper:#f6f3ec; --ink:#1c1b18; --muted:#8a8477; --line:#e2dccf; --accent:#9a7b4f; }
+:root { --paper:#f6f6f2; --card:#ffffff; --ink:#141414; --muted:#8a8a86; --line:#e2e2dc; --accent:#141414; --shadow:#e0e0da; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { background:var(--paper); color:var(--ink); font-family:-apple-system,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif; line-height:1.7; }
 .wrap { max-width:760px; margin:0 auto; padding:0 24px; }
-header { padding:48px 0 28px; border-bottom:1px solid var(--line); }
+header { padding:48px 0 28px; border-bottom:1px solid var(--ink); }
 .brand { display:flex; justify-content:space-between; align-items:baseline; }
-.brand h1 { font-size:26px; letter-spacing:.12em; font-weight:600; }
+.brand h1 { font-size:26px; letter-spacing:.12em; font-weight:800; }
 .brand .en { font-size:12px; color:var(--muted); letter-spacing:.3em; text-transform:uppercase; }
 .nav { display:flex; justify-content:space-between; margin-top:18px; font-size:13px; }
-.nav a { color:var(--muted); text-decoration:none; border:1px solid var(--line); padding:4px 14px; border-radius:2px; }
-.nav a:hover { color:var(--ink); border-color:var(--accent); }
+.nav a { color:var(--muted); text-decoration:none; border:1px solid var(--ink); padding:4px 14px; border-radius:2px; background:var(--card); box-shadow:0 2px 0 var(--shadow); }
+.nav a:hover { color:var(--ink); border-color:var(--black); }
 .trends { padding:32px 0; border-bottom:1px solid var(--line); }
 .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:20px; }
 .sec-head h2 { font-size:15px; letter-spacing:.2em; font-weight:600; }
@@ -28,12 +28,12 @@ header { padding:48px 0 28px; border-bottom:1px solid var(--line); }
 .muted { color:var(--muted); font-size:13px; }
 .filters { display:flex; flex-wrap:wrap; gap:8px; padding:20px 0 6px; }
 .chip { border:1px solid var(--line); background:none; color:var(--muted); font-size:12px; padding:3px 12px; border-radius:999px; cursor:pointer; font-family:inherit; }
-.chip:hover { border-color:var(--accent); color:var(--ink); }
+.chip:hover { border-color:var(--ink); color:var(--ink); }
 .chip.on { background:var(--ink); color:var(--paper); border-color:var(--ink); }
 .list { padding:10px 0 48px; }
 .item { display:grid; grid-template-columns:110px 1fr 52px 44px; gap:12px; align-items:baseline; padding:13px 4px; border-top:1px solid var(--line); text-decoration:none; color:var(--ink); }
 .item:last-child { border-bottom:1px solid var(--line); }
-.item:hover { background:#efece2; }
+.item:hover { background:var(--card); }
 .it-src { font-size:12px; color:var(--muted); }
 .it-title { font-size:14px; }
 .it-tag { font-size:12px; color:var(--accent); text-align:right; }
